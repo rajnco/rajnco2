@@ -1,0 +1,12 @@
+<html>
+    <h1>
+        {{ .title }}
+    </h1>
+<ul>
+        {{ range $item := .items }}
+        <li> <a href=" {{ $item.Link }}"> {{ $item.Title }} </a> </li>
+        
+        {{ end }}
+</ul>
+</html>
+
